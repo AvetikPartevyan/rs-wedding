@@ -16,7 +16,7 @@
   @media (max-width: 766px) {
     .heart-img {
       left: 207px !important;
-      top: 94px !important;
+      top: 94.5px !important;
       width: 36px;
     }
   }
@@ -24,7 +24,7 @@
   @media (min-width: 767px) {
     .heart-img {
       left: 230px !important;
-      top: 91px !important;
+      top: 91.5px !important;
     }
   }
 

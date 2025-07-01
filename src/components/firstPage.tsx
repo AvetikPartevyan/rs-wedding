@@ -1,13 +1,23 @@
 import MainImg from "../assets/img/img_1.JPG";
 import RS from "../assets/icons/RS.svg?react";
+import { useEffect } from "react";
 
 interface Props {
   onContinue: () => void;
 }
 
 function FirstPage({ onContinue }: Props) {
+  // Lock vertical scroll on body while this page is visible
+  useEffect(() => {
+    const previousOverflowY = document.body.style.overflowY;
+    document.body.style.overflowY = "hidden";
+    return () => {
+      document.body.style.overflowY = previousOverflowY || "auto";
+    };
+  }, []);
+
   return (
-    <div className="relative w-full h-screen bg-[#cccccc] text-center flex justify-center items-center overflow-hidden">
+    <div className="relative w-full h-screen bg-[#cccccc] text-center flex justify-center items-center overflow-y-hidden">
       <img
         src={MainImg}
         alt="Main"
