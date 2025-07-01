@@ -30,7 +30,12 @@
 
   @media (max-width: 380px) {
     .fist-button{
-      margin-bottom: 4rem;
+      margin-bottom: 8rem;
+    }
+  }
+  @media (min-width: 380px) {
+    .fist-button{
+      margin-bottom: 9rem;
     }
   }
 
