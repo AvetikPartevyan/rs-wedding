@@ -12,7 +12,7 @@ function Time() {
             <div className="w-0.5 h-20 bg-black my-5"></div>
             <h1 className="text-6xl">12:30</h1>
             <p className="text-xl text-center">Փեսայի տուն</p>
-            <p className="text-xl text-center">Արցախի 20</p>
+            <p className="text-xl text-center">Արցախի 20/2</p>
           </div>
         </FadeInSection>
         <FadeInSection>
