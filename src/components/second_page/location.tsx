@@ -28,7 +28,7 @@ function Location() {
           <h1 className="text-xl text-center">
             Պսակադրությունը կանցկացվի Սուրբ Խաչ եկեղեցում (Արաբկիր)
           </h1>
-          <h1 className="text-xl text-center font-semibold">Ք․ Երևան, Կոմիտասի պող. 64</h1>
+          <h1 className="text-xl text-center font-semibold">Ք. Երևան, Կոմիտասի պող. 64</h1>
           <Church className="w-8/10 h-auto mt-2" />
           <button
             onClick={() =>
