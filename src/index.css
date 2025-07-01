@@ -30,12 +30,7 @@
 
   @media (max-width: 380px) {
     .fist-button{
-      margin-bottom: 8rem;
-    }
-  }
-  @media (min-width: 380px) {
-    .fist-button{
-      margin-bottom: 9rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -55,10 +50,4 @@ body {
   
   .fade-in {
     animation: fadeIn 1.5s ease-in-out forwards;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
   }

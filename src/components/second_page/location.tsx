@@ -12,7 +12,7 @@ function Location() {
       <div className="w-11/12 md:w-3/5 flex flex-col justify-center items-center">
         <FadeInSection>
           <div className="relative w-full h-full flex justify-center items-center flex-col mt-5">
-            <div className="absolute top-0 left-0 inset-0 bg-[#dfdddb] rounded-xl rotate-[3deg] z-0 w-8/10 lg:w-1/2 xl:w-2/3 grid justify-self-center items-self-center"></div>
+            <div className="absolute inset-0 bg-[#dfdddb] rounded-xl -rotate-8 z-0 w-8/10 lg:w-1/2 xl:w-2/3 grid justify-self-center items-self-center"></div>
             <img
               src={MainImg}
               alt="main"
