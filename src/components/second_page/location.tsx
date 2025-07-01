@@ -57,7 +57,7 @@ function Location() {
           <button
             onClick={() =>
               window.open(
-                "https://yandex.com/maps/-/CDxwfRN0",
+                "https://yandex.com/maps/org/adana_complex/63788163900?si=fdg67fkqct0b3vf3c4apg8a4pg",
                 "_blank",
                 "noopener,noreferrer"
               )
