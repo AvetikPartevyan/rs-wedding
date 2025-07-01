@@ -15,7 +15,7 @@ function WeddingDay() {
         </FadeInSection>
       </div>
       <h1 className="text-xl md:text-3xl font-semibold uppercase text-gray mb-10 mt-10">
-      Ռաֆայել & Սինարետա
+      Rafayel & Sinareta
       </h1>
     </div>
   );
