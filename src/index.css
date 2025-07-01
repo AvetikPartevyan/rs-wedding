@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+    will-change: opacity, transform;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 766px) {
+    .heart-img {
+      left: 207px !important;
+      top: 94px !important;
+      width: 36px;
+    }
+  }
+  
+  @media (min-width: 767px) {
+    .heart-img {
+      left: 230px !important;
+      top: 91px !important;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .fist-button{
+      margin-bottom: 4rem;
+    }
+  }
+
+body {
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
