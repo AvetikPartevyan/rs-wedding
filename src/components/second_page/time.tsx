@@ -1,4 +1,5 @@
-import MainImg from "../../assets/img/img_4.JPG";
+import MainImgJpg from "../../assets/img/img_4.JPG";
+import MainImgWebp from "../../assets/img/img_4.JPG?format=webp";
 import TimeImg from "../../assets/icons/Time.svg?react";
 import FadeInSection from "../FadeInSection.tsx";
 
@@ -39,13 +40,16 @@ function Time() {
         </FadeInSection>
          <div className="relative w-full h-full flex justify-center items-center flex-col mt-10">
                     <div className="absolute inset-0 bg-[#dfdddb] rounded-xl -rotate-8 z-0 w-8/10 lg:w-1/2 xl:w-2/3 grid justify-self-center items-self-center"></div>
-                    <img
-                      src={MainImg}
-                      alt="main"
-                      loading="lazy"
-                      decoding="async"
-                      className="relative w-8/10 lg:w-1/2 xl:w-2/3 rounded-xl z-10"
-                    />
+                    <picture className="relative w-8/10 lg:w-1/2 xl:w-2/3 z-10">
+                      <source srcSet={MainImgWebp} type="image/webp" />
+                      <img
+                        src={MainImgJpg}
+                        alt="main"
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full rounded-xl"
+                      />
+                    </picture>
                   </div>
       </div>
     </div>

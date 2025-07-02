@@ -6,6 +6,10 @@ declare module '*.JPG';
 declare module '*.jpeg';
 declare module '*.png';
 declare module '*.gif';
+declare module '*.webp';
+
+// Imports with Vite-ImageTools query, e.g. `foo.jpg?format=webp`
+declare module '*?format=webp';
 
 declare module '*.svg' {
   const src: string;

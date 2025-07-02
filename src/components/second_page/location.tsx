@@ -1,4 +1,5 @@
-import MainImg from "../../assets/img/img_3.JPG";
+import MainImgJpg from "../../assets/img/img_3.JPG";
+import MainImgWebp from "../../assets/img/img_3.JPG?format=webp";
 import LocationFU from "../../assets/icons/LocationFU.svg?react";
 import LocationImg from "../../assets/icons/Location.svg?react";
 import Church from "../../assets/icons/Church.svg?react";
@@ -13,13 +14,16 @@ function Location() {
         <FadeInSection>
           <div className="relative w-full h-full flex justify-center items-center flex-col mt-5">
             <div className="absolute inset-0 bg-[#dfdddb] rounded-xl -rotate-8 z-0 w-8/10 lg:w-1/2 xl:w-2/3 grid justify-self-center items-self-center"></div>
-            <img
-              src={MainImg}
-              alt="main"
-              loading="lazy"
-              decoding="async"
-              className="relative w-8/10 lg:w-1/2 xl:w-2/3 rounded-xl z-10"
-            />
+            <picture className="relative w-8/10 lg:w-1/2 xl:w-2/3 z-10">
+              <source srcSet={MainImgWebp} type="image/webp" />
+              <img
+                src={MainImgJpg}
+                alt="main"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full rounded-xl"
+              />
+            </picture>
           </div>
           <LocationFU className="w-1/2 h-auto mt-10" />
         </FadeInSection>
