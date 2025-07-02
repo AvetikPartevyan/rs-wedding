@@ -42,6 +42,8 @@ function Time() {
                     <img
                       src={MainImg}
                       alt="main"
+                      loading="lazy"
+                      decoding="async"
                       className="relative w-8/10 lg:w-1/2 xl:w-2/3 rounded-xl z-10"
                     />
                   </div>

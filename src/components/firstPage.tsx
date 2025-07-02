@@ -13,6 +13,8 @@ function FirstPage({ onContinue }: Props) {
       <img
         src={MainImg}
         alt="Main"
+        loading="eager"
+        decoding="async"
         className="absolute w-full h-full object-cover md:w-auto md:min-w-[530px] md:min-h-[780px] z-10"
       />
       <div className="relative z-20 text-center flex justify-between items-center flex-col h-full">
